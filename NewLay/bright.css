@@ -1,0 +1,630 @@
+body{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  margin: 50px;
+}
+
+
+
+
+
+
+.header-logo{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+
+.header-logo a{
+  text-decoration: none;
+  color: #2b8385;
+  font-size: 20px;
+  position: relative;
+  left: 18px;
+}
+
+
+.header-logo a:hover{
+  color: rgb(194, 93, 93);
+}
+
+
+.header-logo img{
+  width: 3%;
+  position: absolute;
+  top: 33px;
+  left: 26px;
+}
+
+
+
+
+
+
+
+.header-nav{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+
+.header-nav a{
+  text-decoration: none;
+  color: #64625f;
+  font-size: 15px;
+}
+
+
+.header-nav a:hover {
+  color: rgb(194, 93, 93);
+}
+
+
+
+.search{
+  position: relative;
+}
+
+.search img{
+  width: 10%;
+  position: absolute;
+  top: 2px;
+  left: 150px;
+}
+
+
+
+
+
+.relay{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+
+.relay a{
+  margin-top: 15px;
+  color:  #2b8385;
+  
+}
+
+
+#search-bar{
+  border: 1px solid rgb(224, 210, 210);
+  border-radius: 5px;
+  
+  width: 120%;
+}
+
+
+
+.christmas-light img{
+  width: 5%;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+}
+
+
+.main{
+  margin-top: 50px;
+  margin-left: 100px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+
+.main h1{
+  font-size: 80px;
+  color: #182A51;
+}
+
+
+.select-button{
+  margin-top: 150px;
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.select-button input{
+  margin-top: 20px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+
+.select-button p{
+  font-size: 12px;
+  color: #212121;
+}
+
+
+.get-started{
+  margin-top: 10px;
+}
+
+
+
+
+.main-info{ 
+  position: relative;
+  
+}
+
+.main-info img{
+  position: absolute;
+  top: 80px;
+  right: 90px;
+  
+}
+
+
+.relay p{
+
+  color: #212121;
+  width: 21.5ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #212121;
+  animation: cursor 8s step-start infinite, 
+    text 5s steps(100) alternate infinite;
+}
+
+@keyframes cursor {
+  0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+  0% { 
+    width: 0; 
+  }
+  100% { 
+    width: 50ch; 
+  }
+}
+
+
+.get-started input{
+  width: 60%;
+  border: 1px solid #2b8385;
+  border-radius: 10px;
+  background-color: #2b8385;
+  padding: 10px;
+  margin-top: 25px;
+  margin-left: 12px;
+  color: wheat;
+  cursor: pointer;
+
+}
+
+
+.budget{
+  margin-left: 10px;
+}
+
+
+
+.searchIcon{
+  cursor: pointer;
+}
+
+
+.select-button {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 2.5s ease-in-out ;
+}
+
+
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+
+
+
+.sub-footer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 50px;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin-top: 50px;
+  margin-left: 70px;
+  border-bottom: 1px solid #bcc0c9;
+}
+
+.sub-footer img{
+  width: 20%;
+}
+
+
+.anyWhere{
+  margin-left: 30px;
+}
+
+.accurate{
+  margin-left: 30px;
+}
+
+
+.twenty-four{
+  margin-left: 50px;
+}
+
+
+.our-story{
+  margin-top: 80px;
+  margin-left: 120px;
+}
+
+
+
+.top-selling{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  margin-left: 210px;
+}
+
+
+.top-selling h5{
+  text-align: center;
+  color: #64625f;
+}
+
+
+.top-selling h2{
+  margin-top: 20px;
+  text-align: center;
+  
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.our-story input{
+  cursor: pointer;
+  width: 60%;
+}
+
+
+
+.houses{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 60px;
+  grid-gap: 60px;
+  margin-left: 10px;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  
+}
+
+
+/*.houses img{
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 50%;
+  cursor: pointer;
+  
+  
+  
+}
+*/
+
+
+
+.houses img{
+  
+    
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+
+    /*width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+.house-details{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 150px;
+  margin-top: 20px;
+}
+
+
+
+.house-details span{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+.house{
+  position: relative;
+}
+
+
+.direction img{
+  width: 3.5%;
+  height: 3.5%;
+  position: absolute;
+  top: 1367px;
+  right: 30px;
+}
+
+.direction img:hover{
+  cursor: pointer;
+}
+
+
+.footer{
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-start: 1;
+  grid-column-end: 7;
+  border-bottom: 1px solid #bcc0c9;
+  
+}
+
+
+
+
+.footer-logo{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.footer-logoimg img{
+  position: absolute;
+  top: 1497px;
+  left: 51px;
+  width: 2%;
+  
+}
+
+
+
+
+
+.footer-homelink a{
+  margin-left: 30px;
+}
+
+
+
+.footer-logo a{
+  text-decoration: none;
+  color: #2b8385; 
+  
+}
+
+
+
+.footer-signuplink a{
+  color: #212121;
+  font-size: 15px;
+  
+}
+
+
+
+
+
+#cf {
+  position:relative;
+  height:281px;
+  width:100%;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+
+
+
+
+
+
+
+/*
+@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#cf4a img:nth-of-type(1) {
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  animation-delay: 0;
+}
+*/
+
+
+@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#cf4a img:nth-of-type(1) {
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(2) {
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  animation-delay: 0;
+}
+
+
+.copyright{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin-top: 20px;
+}
+
+.data-list td{
+  
+  text-align: center;
+  
+}
+
+td a{
+  color: #182A51;
+}
+
+
+.save{
+  width: 10%;
+}
